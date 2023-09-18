@@ -1,0 +1,151 @@
+.home{
+    background-image: url("/assets/img/portada.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top; 
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.contacto{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+    .boton_contacto{
+        background-color: transparent;
+        color: var(--turquesa);
+        font-size: 48px;
+        width: 24px;
+        cursor: pointer;
+    }
+
+    .boton_contacto:hover{
+        transform: scale(1.4);
+        border: none;
+    }
+
+.contenido{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    font-size: 22px;
+}
+
+.saludo{
+    color: var(--blanco);
+}
+
+.icono{
+    color: var(--turquesa);
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    align-self: center;
+}
+
+.developer{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+button{
+    background-color: var(--turquesa);
+    color: var(--blanco);
+    height: 48px;
+    width: 180px;
+    border: none;
+    font-size: 18px;
+}
+    button:hover{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid var(--turquesa);
+    }
+
+.boton_vacio{
+    background-color: transparent;
+    border: 2px solid var(--turquesa);
+}
+
+    .boton_vacio:hover{
+        cursor: pointer;
+        background-color: var(--turquesa);
+    }
+
+    /* Media query para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .botones {
+        flex-direction: row; /* Vuelve a la dirección de fila para tabletas */
+        gap: 30px; /* Puedes ajustar el espacio entre elementos según tus preferencias */
+    }
+
+    p{
+        font-size: 24px;
+    }
+}
+    
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .botones {
+        flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
+        gap: 12px; /* Reduce el espacio entre elementos en dispositivos móviles */
+        margin-bottom: 24px;
+    }
+
+    button{
+        width: 120px;
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+        text-align: center;
+    }
+
+    .developer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 24px;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .contacto{
+        gap: 6px;
+        padding: 4px;
+    }
+
+    .boton_contacto{
+        padding: 4px;
+        font-size: 22px;
+        height: 22px;
+    }
+}
+    

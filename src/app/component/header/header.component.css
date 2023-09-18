@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    background-color: transparent;
+    padding: 8px;
+    position: fixed;
+    width: 100vw;
+    font-family: "Portfolio";
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.link:hover{
+    color: var(--turquesa);
+}
+
+@media screen and (min-width: 769px) {
+    .header {
+        height: 8vh; /* Ajusta la altura según tus necesidades */
+        font-size: 18px; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 16px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 14px;
+        padding-left: 12px;
+    }
+}
