@@ -18,6 +18,12 @@
     gap: 24px;
 }
 
+    img{
+        width: 280px;
+        height: 280px;
+        margin-bottom: -60px;
+    }
+
     .boton_contacto{
         background-color: transparent;
         color: var(--turquesa);
@@ -32,7 +38,7 @@
     }
 
 .contenido{
-    margin-top: 120px;
+    /* margin-top: 120px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,17 +102,27 @@ button{
     /* Media query para tablets */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .botones {
-        flex-direction: row; /* Vuelve a la dirección de fila para tabletas */
-        gap: 30px; /* Puedes ajustar el espacio entre elementos según tus preferencias */
+        flex-direction: row; 
+        gap: 30px; 
     }
 
     p{
         font-size: 24px;
     }
+
+    .developer{
+        margin-top: 100px;
+    }
 }
     
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
+
+    h1{
+        margin-top: 36px;
+        font-size: 24px;
+    }
+
     .botones {
         flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
         gap: 12px; /* Reduce el espacio entre elementos en dispositivos móviles */

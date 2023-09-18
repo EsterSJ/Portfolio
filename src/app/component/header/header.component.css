@@ -14,6 +14,12 @@
     padding-right: 50px;
 }
 
+img{
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+}
+
 .link{
     text-decoration: none;
     color: var(--blanco);
@@ -21,6 +27,7 @@
 
 .link:hover{
     color: var(--turquesa);
+    transform: scale(1.4);
 }
 
 @media screen and (min-width: 769px) {
@@ -40,5 +47,9 @@
         gap: 10px;
         font-size: 14px;
         padding-left: 12px;
+    }
+
+    img{
+        display: none;
     }
 }
