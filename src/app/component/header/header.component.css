@@ -12,6 +12,7 @@
     gap: 40px;
     font-size: 20px;
     padding-right: 50px;
+    z-index: 1000;
 }
 
 img{
