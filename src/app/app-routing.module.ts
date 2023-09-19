@@ -5,6 +5,7 @@ import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path:'home', component: HomeComponent},
   {path: 'sobreMi', component: SobreMiComponent}
 ];
 

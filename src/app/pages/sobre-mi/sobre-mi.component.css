@@ -1,16 +1,19 @@
+/* estilos informacion sobre mi */
 .contenedor_sobreMi{
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
+    height: 85vh;
+    background-image: linear-gradient(#000000, #9B9B9B);
 }
 
 .triangle {
     position: relative;
-    background: rgba(0, 0, 0, 0.9);
+    background: #101010;
   }
   
   .triangle::before {
@@ -21,7 +24,7 @@
     height: 0;
     border-style: solid;
     border-width: 100px 100px 0 100px;
-    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+    border-color: #101010 transparent transparent transparent;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
   }
@@ -67,4 +70,134 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* estilos experiencia */
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    background-image: url("/assets/img/ciudad.jpg");
+    background-size: cover;
+    background-position: center top;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.laboral, .formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 24px;
+    box-shadow: 4px 4px 4px white;
+    padding: 40px;
+
+    view-timeline-name: --cuadro;
+    view-timeline-axis: block;
+
+    animation-timeline: --cuadro;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+h1{
+    color: var(--turquesa);
+}
+
+.texto_formacion{
+    align-self: flex-start;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.logo_formacion{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.lista{
+    font-size: 19px;
+    padding-bottom: 24px;
+    color: var(--blanco);
+    align-self: flex-start;
+    margin-left: 120px;
+}
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+/* estilos tecnologias */
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-top: 120px;
+}
+
+.tech{
+    color: var(--turquesa);
+    border: 3px solid var(--turquesa);
+    font-size: 62px;
+    font-weight: lighter;
+    padding: 60px;
+}
+
+.logos_tech{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+/* estilos footer */
+.footer{
+    height: 14vh;
+    background-color: var(--turquesa);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 48px;
+}
+
+.icono_footer{
+    font-size: 58px;
+    color: var(--blanco);
 }
