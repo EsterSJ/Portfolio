@@ -22,19 +22,23 @@ img{
 }
 
 .link{
+    font-size: 22px;
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--turquesa);
 }
 
 .link:hover{
-    color: var(--turquesa);
+    color: var(--blanco);
     transform: scale(1.4);
 }
 
 @media screen and (min-width: 769px) {
     .header {
-        height: 8vh; /* Ajusta la altura según tus necesidades */
-        font-size: 18px; /* Ajusta el tamaño de fuente según tus necesidades */
+        height: 8vh; 
+    }
+
+    .link{
+        font-size: 18px;
     }
 }
 
@@ -46,11 +50,14 @@ img{
         justify-content: center;
         align-items: flex-end;
         gap: 10px;
-        font-size: 14px;
         padding-left: 12px;
     }
 
     img{
         display: none;
+    }
+
+    .link{
+        font-size: 14px;
     }
 }
