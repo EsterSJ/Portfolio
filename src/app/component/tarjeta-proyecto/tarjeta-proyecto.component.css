@@ -54,28 +54,28 @@ button{
 
 @media (max-width: 768px) {
     .tarjeta {
-        width: 90%; /* Cambiar el ancho para que se adapte mejor a tabletas */
+        width: 90%; 
         margin: auto;
         margin-top: 40px;
     }
 
     .titulo {
-        font-size: 28px; /* Reducir el tamaño de fuente del título */
+        font-size: 28px; 
     }
 
     img {
-        width: 100%; /* Hacer que la imagen sea 100% del ancho del contenedor */
-        height: auto; /* Mantener la proporción de la imagen */
+        width: 100%; 
+        height: auto; 
     }
 
     .botones {
-        flex-direction: column; /* Apilar botones en tabletas */
-        width: 100%; /* Utilizar todo el ancho disponible */
+        flex-direction: column; 
+        width: 100%; 
     }
 
     button {
-        width: 100%; /* Utilizar todo el ancho disponible para los botones */
-        margin-bottom: 12px; /* Agregar un margen inferior entre los botones apilados */
+        width: 100%; 
+        margin-bottom: 12px; 
     }
 }
 
