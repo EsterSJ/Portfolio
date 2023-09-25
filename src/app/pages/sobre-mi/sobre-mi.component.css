@@ -195,28 +195,6 @@ h1{
     animation-fill-mode: both;
 }
 
-/* estilos footer */
-.footer{
-    height: 14vh;
-    background-color: var(--turquesa);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
-    padding-right: 48px;
-}
-
-.icono_footer{
-    font-size: 48px;
-    color: var(--blanco);
-}
-
-.boton_contacto{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     .contenedor_sobreMi {
@@ -314,14 +292,6 @@ h1{
         height: 42px;
     }
     
-    .footer {
-        justify-content: center;
-        padding: 24px;
-    }
-    
-    .icono_footer {
-        font-size: 32px;
-    }
 }
 
 /* Media query para tablets y pantallas medianas */

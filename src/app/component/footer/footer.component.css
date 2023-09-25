@@ -1,0 +1,43 @@
+/* estilos footer */
+.footer{
+    height: 14vh;
+    background-color: var(--turquesa);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 48px;
+}
+
+p{
+    margin-right: auto;
+    color: var(--blanco);
+    padding-left: 24px;
+}
+
+.icono_footer{
+    font-size: 48px;
+    color: var(--blanco);
+}
+
+.boton_contacto{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .footer {
+        justify-content: center;
+        padding: 24px;
+    }
+    
+    .icono_footer {
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}

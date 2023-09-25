@@ -1,0 +1,95 @@
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 500px;
+    background-color: var(--turquesa);
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.titulo{
+    text-decoration: none;
+    font-size: 34px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+img{
+    width: 452px;
+    height: 217px;
+    border: 2px solid var(--blanco);
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 452px;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    width: 240px;
+    height: 40px;
+    color: var(--blanco);
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    font-weight: bold;  
+}
+
+    button:hover{
+        background-color: var(--turquesa);
+        color: var(--blanco);
+        border:  none;
+    }
+
+
+/* Estilos para pantallas más pequeñas, por ejemplo, tabletas */
+
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 90%; /* Cambiar el ancho para que se adapte mejor a tabletas */
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .titulo {
+        font-size: 28px; /* Reducir el tamaño de fuente del título */
+    }
+
+    img {
+        width: 100%; /* Hacer que la imagen sea 100% del ancho del contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .botones {
+        flex-direction: column; /* Apilar botones en tabletas */
+        width: 100%; /* Utilizar todo el ancho disponible */
+    }
+
+    button {
+        width: 100%; /* Utilizar todo el ancho disponible para los botones */
+        margin-bottom: 12px; /* Agregar un margen inferior entre los botones apilados */
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas, como dispositivos móviles */
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 80%; 
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .titulo {
+        font-size: 24px; 
+    }
+
+}
