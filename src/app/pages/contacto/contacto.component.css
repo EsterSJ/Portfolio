@@ -1,0 +1,96 @@
+.contenedor_contacto{
+    background-image: url("/assets/img/proyectos.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center top; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 86vh;
+    padding-top: 10vh;
+}
+
+.formulario{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 38px;
+}
+
+textarea{
+    border: 2px solid var(--blanco);
+    resize: none;
+}
+
+input::placeholder {
+    color: var(--blanco); 
+}
+
+textarea::placeholder {
+    color: var(--blanco); 
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 20px;
+    height: 42px;
+    width: 140px;
+}
+
+button:hover{
+    background-color: var(--turquesa);
+    border: none;
+}
+
+
+@media (max-width: 1024px) {
+
+    .contenedor_contacto{
+        padding-top: 22vh;
+        padding-bottom: 5vh;
+    }
+
+    .formulario {
+        width: 80vw; 
+        margin: auto;
+    }
+
+    .logo {
+        display: none; 
+    }
+
+    input, textarea {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor_contacto {
+        flex-direction: column; 
+    }
+
+    .formulario {
+        width: 90vw; 
+    }
+}
