@@ -18,9 +18,15 @@
     gap: 24px;
 }
 
-    img{
-        width: 280px;
-        height: 280px;
+    .img_logo{
+        width: 260px; 
+        height: auto;
+        margin-bottom: -60px;
+    }
+
+    .nombre{
+        font-size: 32px; 
+        font-weight: bold;
     }
 
     .boton_contacto{
@@ -43,7 +49,7 @@
 .contenido{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: var(--blanco);
     margin-right: auto;
@@ -116,9 +122,13 @@ button{
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
 
-    h1{
+    /* h1{
         margin-top: 36px;
         font-size: 24px;
+    } */
+
+    .nombre{
+        font-size: 20px;
     }
 
     .botones {
@@ -146,10 +156,10 @@ button{
         margin-bottom: 24px;
     }
 
-    img{
+    .img_logo{
         width: 120px;
         height: 120px;
-        margin-bottom: -60px;
+        margin-bottom: -18px;
 
     }
 
@@ -175,6 +185,10 @@ button{
 
     h1{
         font-size: 16px;
+    }
+
+    .contenido{
+        margin-top: 0;
     }
 }
     
