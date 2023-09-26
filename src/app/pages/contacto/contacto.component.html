@@ -1,10 +1,12 @@
 <div class="contenedor_contacto">
-    <form class="formulario">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Asunto">
-        <textarea rows="12" cols="50" placeholder="Deja tu mensaje"></textarea>
-        <button>Enviar</button>
+    <form action="https://formsubmit.co/fd784358f13581b699a50b99151326dd" method="POST" class="formulario">
+        <input type="text" placeholder="Nombre" name="nombre">
+        <input type="text" placeholder="Email" name="email">
+        <input type="text" placeholder="Asunto" name="asunto">
+        <textarea rows="12" cols="50" placeholder="Deja tu mensaje" name="mensaje"></textarea>
+        <button (click)="enviar();">Enviar</button>
+        <input type="hidden" name="_next" value="http://localhost:4200">
+        <input type="hidden" name="_captcha" value="false">
     </form>
     <div class="logo">
         <img src="assets/img/avion_papel.png" alt="">
