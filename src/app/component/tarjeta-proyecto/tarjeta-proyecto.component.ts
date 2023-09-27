@@ -18,17 +18,15 @@ export class TarjetaProyectoComponent {
       title: this.proyecto.nombre,
       text: `${this.proyecto.explicacion}`,
       footer: `
-        <a href="${this.proyecto.url}" target="_blank" style="text-decoration: none; color: var(--turquesa); font-size: 24px">
-          ${this.proyecto.url}
+        <a href="${this.proyecto.github}" target="_blank" style="text-decoration: none; color: var(--turquesa); font-size: 24px">
+          ${this.proyecto.github}
         </a>`
         })
   }
 
   public irApp() {
-    // URL del enlace al que deseas redirigir
-    const url = 'https://3-en-raya.vercel.app/';
-  
-    // Abre el enlace en una nueva pestaña o ventana del navegador
+    // const url = 'https://3-en-raya.vercel.app/';
+    const url = this.proyecto.url;
     window.open(url, '_blank');
   }
   
