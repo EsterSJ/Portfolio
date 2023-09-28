@@ -15,12 +15,12 @@ public   descargarCV() {
   anchor.setAttribute('download', 'CV_Ester.pdf'); 
   anchor.click();
 }
-
+//width="520" height="315"
 public videoCV(){
   Swal.fire({
     html: `
       <div class="video_container">
-        <iframe width="520" height="315" src="assets/img/videoCV.mp4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="assets/img/videoCV.mp4" frameborder="0" allowfullscreen></iframe>
       </div>
     `,
     width: '600px',
