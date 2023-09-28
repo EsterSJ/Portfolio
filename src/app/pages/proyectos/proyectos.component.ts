@@ -15,7 +15,7 @@ export class ProyectosComponent {
       new Proyecto("3 en Raya", "assets/img/3enRaya.png", "Juego de 3 en raya inspirado en Super Mario Bross", "https://3-en-raya.vercel.app/", "https://github.com/EsterSJ"),
       new Proyecto("TuneTales", "assets/img/tunetales.png", "Red social para músicos", "https://tune-tales.vercel.app/", "https://github.com/EsterSJ/TuneTales"),
       new Proyecto("Portfolio", "assets/img/portfolio.png", "Diseño y desarrollo de portfolio personalizado", "https://portfolioestersj.vercel.app/", "https://github.com/EsterSJ/Portfolio"),
-      new Proyecto("Gestión de vehículos", "assets/img/construccion.jpg", "Aplicación en construcción", "", ""),
+      new Proyecto("Próximamente", "assets/img/construccion.jpg", "Aplicación en construcción", "", ""),
     ];
   }
 }
