@@ -11,6 +11,22 @@
     color: var(--blanco);
 }
 
+.video_container{
+        position: relative;
+        padding-bottom: 56.25%; /* Proporción de 16:9 (9 / 16 * 100%) */
+        height: 0;
+        overflow: hidden;
+}
+    
+      /* Estilo para el iframe del video */
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
 .contacto{
     padding: 18px;
     display: flex;

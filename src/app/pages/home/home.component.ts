@@ -19,7 +19,7 @@ public   descargarCV() {
 public videoCV(){
   Swal.fire({
     html: `
-      <div>
+      <div class="video_container">
         <iframe width="520" height="315" src="assets/img/videoCV.mp4" frameborder="0" allowfullscreen></iframe>
       </div>
     `,
