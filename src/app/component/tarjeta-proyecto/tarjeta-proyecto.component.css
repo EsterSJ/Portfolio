@@ -24,6 +24,12 @@ img{
     border: 2px solid var(--blanco);
 }
 
+.link_github{
+    text-decoration: none; 
+    color: var(--turquesa); 
+    font-size: 24px;
+}
+
 .botones{
     display: flex;
     flex-direction: row;
@@ -77,6 +83,10 @@ button{
         width: 100%; 
         margin-bottom: 12px; 
     }
+
+    .link_github{
+        font-size: xx-small;
+    }
 }
 
 /* Estilos para pantallas aún más pequeñas, como dispositivos móviles */
@@ -92,4 +102,8 @@ button{
         font-size: 24px; 
     }
 
+    .link_github{
+        font-size: xx-small;
+    }
+    
 }

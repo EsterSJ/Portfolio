@@ -18,7 +18,7 @@ export class TarjetaProyectoComponent {
       title: this.proyecto.nombre,
       text: `${this.proyecto.explicacion}`,
       footer: `
-        <a href="${this.proyecto.github}" target="_blank" style="text-decoration: none; color: var(--turquesa); font-size: 18px">
+        <a href="${this.proyecto.github}" target="_blank" class="link_github" style="">
           ${this.proyecto.github}
         </a>`
         })
