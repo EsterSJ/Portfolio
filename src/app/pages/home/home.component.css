@@ -13,7 +13,7 @@
 
 .video_container{
         position: relative;
-        padding-bottom: 56.25%; /* Proporción de 16:9 (9 / 16 * 100%) */
+        padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
 }
@@ -137,11 +137,6 @@ button{
     
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
-
-    /* h1{
-        margin-top: 36px;
-        font-size: 24px;
-    } */
 
     .nombre{
         font-size: 20px;

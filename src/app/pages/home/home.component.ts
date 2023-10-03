@@ -15,7 +15,7 @@ public   descargarCV() {
   anchor.setAttribute('download', 'CV_Ester.pdf'); 
   anchor.click();
 }
-//width="520" height="315"
+
 public videoCV(){
   Swal.fire({
     html: `
