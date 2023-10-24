@@ -11,20 +11,12 @@
     justify-content: center;
     align-items: center;
 
-    /* flex-direction: row;
-    flex-wrap: wrap;
-    gap: 80px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15vh;
-    padding-bottom: 8vh;
-    min-height: 86vh; */
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
     .contenedor_proyectos{
         gap: 0px;
     }
 
-}
+} */
