@@ -12,20 +12,13 @@ export class TarjetaProyectoComponent {
   @Input() proyecto: Proyecto;
 
   public mostrarInfo(){
-    console.log(this.proyecto);
     
-    Swal.fire({
-      title: this.proyecto.nombre,
-      text: `${this.proyecto.explicacion}`,
-      footer: `
-        <a href="${this.proyecto.github}" target="_blank" class="link_github" style="">
-          ${this.proyecto.github}
-        </a>`
-        })
+    const url = this.proyecto.github;
+    window.open(url, '_blank');
+
   }
 
   public irApp() {
-    // const url = 'https://3-en-raya.vercel.app/';
     const url = this.proyecto.url;
     window.open(url, '_blank');
   }

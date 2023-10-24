@@ -4,14 +4,21 @@
     background-attachment: fixed;
     background-position: center top; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: row;
     flex-wrap: wrap;
     gap: 80px;
     justify-content: center;
     align-items: center;
     padding-top: 15vh;
     padding-bottom: 8vh;
-    min-height: 86vh;
+    min-height: 86vh; */
 }
 
 @media (max-width: 480px) {

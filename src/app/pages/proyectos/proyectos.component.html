@@ -1,6 +1,6 @@
 <div class="contenedor_proyectos">
-    <div *ngFor="let proyecto of proyectos; let i = index">
-        <app-tarjeta-proyecto [proyecto] = "proyecto" (click)="mostrarInfo(i)"></app-tarjeta-proyecto>
+    <div *ngFor="let proyecto of proyectos">
+        <app-tarjeta-proyecto [proyecto] = "proyecto"></app-tarjeta-proyecto>
     </div>
 </div>
 <app-footer></app-footer>

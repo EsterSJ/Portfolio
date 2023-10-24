@@ -1,8 +1,15 @@
 <div class="tarjeta">
-    <p class="titulo">{{proyecto.nombre}}</p>
-    <img src={{proyecto.foto}} alt="">
-    <div class="botones">
-        <button (click)="mostrarInfo();">Saber más</button>
-        <button (click)="irApp();">Ver app</button>
+    <p class="titulo"><i class="bi bi-caret-right-square-fill"></i> {{proyecto.nombre}}</p>
+    <div class="contenido">
+        <img src={{proyecto.foto}} alt="">
+        <div class="informacion">
+            <div class="info">
+                <p>{{proyecto.explicacion}}</p>
+            </div>
+            <div class="botones">
+                <button (click)="mostrarInfo();"><i class="bi bi-github"></i> Repositorio</button>
+                <button (click)="irApp();"><i class="bi bi-collection-play-fill"></i> Ver app</button>
+            </div>
+        </div>
     </div>
 </div>
